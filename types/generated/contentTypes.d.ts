@@ -468,7 +468,6 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
-    test: Schema.Attribute.String;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -529,7 +528,7 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     eventName: Schema.Attribute.String & Schema.Attribute.Required;
     eventType: Schema.Attribute.Enumeration<['exhibition', 'event']> &
       Schema.Attribute.Required;
-    firstFloorSize: Schema.Attribute.Integer & Schema.Attribute.Required;
+    firstFloorSize: Schema.Attribute.Float;
     images: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios',
       true
@@ -543,8 +542,8 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     referringCompany: Schema.Attribute.String;
-    secondFloorSize: Schema.Attribute.Integer;
-    totalSize: Schema.Attribute.Integer & Schema.Attribute.Required;
+    secondFloorSize: Schema.Attribute.Float;
+    totalSize: Schema.Attribute.Float;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

@@ -23,9 +23,6 @@
     "description": {
       "type": "text",
       "required": true
-    },
-    "test": {
-      "type": "string"
     }
   }
 }

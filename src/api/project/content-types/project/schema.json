@@ -36,15 +36,15 @@
       "required": true
     },
     "firstFloorSize": {
-      "type": "integer",
-      "required": true
+      "type": "float",
+      "required": false
     },
     "secondFloorSize": {
-      "type": "integer"
+      "type": "float"
     },
     "totalSize": {
-      "type": "integer",
-      "required": true
+      "type": "float",
+      "required": false
     },
     "referringCompany": {
       "type": "string",

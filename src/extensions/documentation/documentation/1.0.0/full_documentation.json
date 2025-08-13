@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2025-08-12T13:59:30.036Z"
+    "x-generation-date": "2025-08-13T15:12:06.676Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -3670,9 +3670,6 @@
               "description": {
                 "type": "string"
               },
-              "test": {
-                "type": "string"
-              },
               "createdAt": {
                 "type": "string",
                 "format": "date-time"
@@ -4622,9 +4619,6 @@
               "description": {
                 "type": "string"
               },
-              "test": {
-                "type": "string"
-              },
               "locale": {
                 "type": "string"
               },
@@ -4702,9 +4696,6 @@
             "type": "string"
           },
           "description": {
-            "type": "string"
-          },
-          "test": {
             "type": "string"
           },
           "createdAt": {
@@ -5014,9 +5005,6 @@
                   "type": "string"
                 },
                 "description": {
-                  "type": "string"
-                },
-                "test": {
                   "type": "string"
                 },
                 "createdAt": {
@@ -5576,8 +5564,6 @@
               "eventType",
               "eventName",
               "eventDate",
-              "firstFloorSize",
-              "totalSize",
               "images"
             ],
             "type": "object",
@@ -5604,13 +5590,16 @@
                 "format": "date"
               },
               "firstFloorSize": {
-                "type": "integer"
+                "type": "number",
+                "format": "float"
               },
               "secondFloorSize": {
-                "type": "integer"
+                "type": "number",
+                "format": "float"
               },
               "totalSize": {
-                "type": "integer"
+                "type": "number",
+                "format": "float"
               },
               "referringCompany": {
                 "type": "string"
@@ -5703,8 +5692,6 @@
           "eventType",
           "eventName",
           "eventDate",
-          "firstFloorSize",
-          "totalSize",
           "images"
         ],
         "properties": {
@@ -5736,13 +5723,16 @@
             "format": "date"
           },
           "firstFloorSize": {
-            "type": "integer"
+            "type": "number",
+            "format": "float"
           },
           "secondFloorSize": {
-            "type": "integer"
+            "type": "number",
+            "format": "float"
           },
           "totalSize": {
-            "type": "integer"
+            "type": "number",
+            "format": "float"
           },
           "referringCompany": {
             "type": "string"
@@ -6489,13 +6479,16 @@
                   "format": "date"
                 },
                 "firstFloorSize": {
-                  "type": "integer"
+                  "type": "number",
+                  "format": "float"
                 },
                 "secondFloorSize": {
-                  "type": "integer"
+                  "type": "number",
+                  "format": "float"
                 },
                 "totalSize": {
-                  "type": "integer"
+                  "type": "number",
+                  "format": "float"
                 },
                 "referringCompany": {
                   "type": "string"
